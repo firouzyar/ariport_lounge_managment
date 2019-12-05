@@ -1,0 +1,29 @@
+.landing-wrapper{
+   position: relative;
+   .chose-layout-wrapper{
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      >span{
+         margin-left:5px;
+         cursor: pointer;
+         &.active{
+            svg{
+               color:#20b1f9;
+            }
+         }
+         svg{
+            color:#929292;
+            font-size: 22px;
+         }
+      }
+   }
+   .lounges-wrapper{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      &.list-view-wrapper{
+         flex-direction: column;
+      }
+   }
+}

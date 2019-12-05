@@ -1,0 +1,90 @@
+@import "../../assets/styles/mxinis";
+@import "../../assets/styles/variable";
+.detail-wrapper{
+   position: relative;
+   .delete-wrapper{
+      position: absolute;
+      top: 5px;
+      right: 10px;
+   }
+   .detail-content{
+      display: flex;
+      justify-content: space-between;
+      >div{
+         &:first-child{
+            margin-right: 25px;
+         }
+         flex: 1;
+      }
+      .img-wrapper{
+         img{
+            width: 100%;
+            height: auto;
+            @include borderRadius(4px);
+         }
+      }
+      .info-wrapper{
+         .info-descr{
+            font-size: 17px;
+            line-height: 1.9;
+         }
+         .extra-info{
+            font-family: 'Karla', sans-serif;
+            display: flex;
+            margin-top:20px;
+            justify-content: space-between;
+            font-size: 16px;
+            font-style: italic;
+            color: #7d7d7d;
+            .price{
+               font-size: 22px;
+               color:$fontGreen;
+            }
+         }
+         .booking-box{
+            margin-top:30px;
+            flex-direction: column;
+            h3{
+               margin:0;
+            }
+            .booking-info{
+               display: flex;
+               justify-content: flex-start;
+               flex-direction: row;
+               margin-top:20px;
+               margin-bottom: 20px;
+               input[type="text"]{
+                  outline: none;
+                  padding: 5px 10px;
+                  border:1px solid #cacaca;
+                  @include borderRadius(4px);
+                  min-width:220px;
+                  font-family: 'Karla', sans-serif;
+                  margin-right: 15px;
+                  &.error{
+                     border-color:$dangerBtn;
+                  }
+               }
+               .checkbox{
+                  margin-bottom: 0px !important;
+               }
+            }
+         }
+         .no-available-wrapper{
+            display: flex;
+            background-color: #cacaca;
+            padding: 15px;
+            border-radius: 3px;
+            text-align: center;
+            justify-content: center;
+            height: 80px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #6b6b6b;
+            align-items: center;
+            margin-top:30px;
+         }
+      }
+   }
+
+}

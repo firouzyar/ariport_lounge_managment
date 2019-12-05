@@ -1,0 +1,14 @@
+@import "../../../assets/styles/mxinis";
+input{
+  border-color: #eee;
+  @include borderRadius(4px);
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: .8rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  padding-top: .8rem;
+  flex: 1;
+
+}
+

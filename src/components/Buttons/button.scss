@@ -1,0 +1,49 @@
+@import "../../assets/styles/mxinis";
+@import "../../assets/styles/variable";
+.c-btn{
+  @include borderRadius(4px);
+  outline: none;
+  padding: 5px 10px;
+  background: none;
+  border:none;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  min-width: 100px;
+  min-height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  flex: 2;
+  &:disabled{
+    background-color: $disableBtn !important;
+    cursor: not-allowed;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+  &.success-btn{
+    background: $successBtn;
+    &:hover{
+      background: darken($successBtn,5);
+    }
+  }
+  &.danger-btn{
+    background: $dangerBtn;
+    &:hover{
+      background: darken($dangerBtn,5);
+    }
+  }
+  &.primary-btn{
+    background: $primaryBtn;
+    &:hover{
+      background: darken($primaryBtn,5);
+    }
+  }
+  &.disable-btn{
+    background: $disableBtn;
+    &:hover{
+      background: darken($disableBtn,5);
+    }
+  }
+}
